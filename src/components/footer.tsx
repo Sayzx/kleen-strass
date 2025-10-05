@@ -44,9 +44,9 @@ export function Footer() {
               <li className="hover:text-[#f00020] transition-colors cursor-pointer" onClick={() => navigator.clipboard.writeText("+33 6 50 03 09 40")}> +33 6 50 03 09 40</li>
                 <li
                 className="hover:text-[#f00020] transition-colors cursor-pointer"
-                onClick={() => navigator.clipboard.writeText("contact@diamondsmile.fr")}
+                onClick={() => navigator.clipboard.writeText("contactkleensmile@gmail.com")}
                 >
-                contact@diamondsmile.fr
+                contactkleensmile@gmail.com
                 </li>
             </ul>
 
@@ -54,12 +54,12 @@ export function Footer() {
               <div className="w-8 h-8 bg-gradient-to-br from-[#f00020] to-[#cc0018] rounded-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
                 <Instagram className="w-4 h-4 text-white" />
               </div>
-              <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
-                <MessageCircle className="w-4 h-4 text-white" />
-              </div>
-              <div className="w-8 h-8 bg-gradient-to-br from-white to-[#f00020]rounded-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+                <a
+                href="mailto:contactkleensmile@gmail.com"
+                className="w-8 h-8 bg-gradient-to-br from-white to-[#f00020] rounded-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                >
                 <Mail className="w-4 h-4 text-black" />
-              </div>
+                </a>
             </div>
           </div>
         </div>

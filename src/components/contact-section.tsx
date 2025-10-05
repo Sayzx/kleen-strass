@@ -124,9 +124,9 @@ export function ContactSection() {
                   <h4 className="font-bold text-white text-sm mb-2">EMAIL</h4>
                     <p
                     className="text-xs text-gray-400 cursor-pointer hover:text-[#f00020] transition-colors"
-                    onClick={() => navigator.clipboard.writeText("contact@diamondsmile.fr")}
+                    onClick={() => navigator.clipboard.writeText("contactkleensmile@gmail.com")}
                     >
-                    contact@diamondsmile.fr
+                    contactkleensmile@gmail.com
                     </p>
                 </CardContent>
               </Card>
