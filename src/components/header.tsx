@@ -68,10 +68,13 @@ export function Header() {
               >
                 CONTACT
               </Link>
-              <Button className="bg-gradient-to-r from-[#f00020] to-[#cc0018] hover:from-[#ff1a3a] hover:to-[#f00020] text-white font-bold px-6">
+                <Button
+                onClick={() => window.open("https://web.whatsapp.com/send?phone=33650030940", "_blank")}
+                className="bg-gradient-to-r from-[#f00020] to-[#cc0018] hover:from-[#ff1a3a] hover:to-[#f00020] text-white font-bold px-6"
+                >
                 <Phone className="w-4 h-4 mr-2" />
                 RÉSERVER
-              </Button>
+                </Button>
             </nav>
 
             {/* Mobile Menu Button */}
