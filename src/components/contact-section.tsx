@@ -236,7 +236,10 @@ export function ContactSection() {
                 <div className="flex justify-center space-x-6">
                   <div className="group relative">
                     <div className="absolute inset-0 bg-[#f00020] rounded-2xl blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                    <div className="relative w-16 h-16 bg-gradient-to-br from-[#f00020] to-[#cc0018] rounded-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer">
+                    <div
+                      className="relative w-16 h-16 bg-gradient-to-br from-[#f00020] to-[#cc0018] rounded-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer"
+                      onClick={() => window.open("https://www.instagram.com/kleen_smile?igsh=MWpncWd2dTQycDB4Nw%3D%3D&utm_source=qr", "_blank")}
+                    >
                       <Instagram className="w-8 h-8 text-white" />
                     </div>
                   </div>

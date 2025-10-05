@@ -51,9 +51,14 @@ export function Footer() {
             </ul>
 
             <div className="flex space-x-3 mt-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-[#f00020] to-[#cc0018] rounded-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+                <a
+                href="https://www.instagram.com/kleen_smile?igsh=MWpncWd2dTQycDB4Nw%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-gradient-to-br from-[#f00020] to-[#cc0018] rounded-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                >
                 <Instagram className="w-4 h-4 text-white" />
-              </div>
+                </a>
                 <a
                 href="mailto:contactkleensmile@gmail.com"
                 className="w-8 h-8 bg-gradient-to-br from-white to-[#f00020] rounded-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
