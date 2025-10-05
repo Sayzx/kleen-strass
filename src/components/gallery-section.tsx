@@ -11,12 +11,12 @@ export function GallerySection() {
   const [isMobile, setIsMobile] = useState(false)
 
   const galleryItems = [
-    { id: 1, title: "Cristaux Swarovski", price: "150€", category: "Classic", type: "strass" },
-    { id: 2, title: "Strass 3D Rose", price: "280€", category: "Premium", type: "3d" },
-    { id: 3, title: "Diamants VVS", price: "850€", category: "Luxury", type: "diamond" },
-    { id: 4, title: "Strass Arc-en-ciel", price: "220€", category: "Creative", type: "rainbow" },
-    { id: 5, title: "Cristaux Noirs", price: "180€", category: "Gothic", type: "black" },
-    { id: 6, title: "Strass Dorés", price: "200€", category: "Gold", type: "gold" },
+    { id: 1, image: "/moment.png?height=400&width=400&query=dental gems strass" },
+    { id: 2, image: "/moment.png?height=400&width=400&query=dental gems 3d" },
+    { id: 3, image: "/moment.png?height=400&width=400&query=dental gems diamond" },
+    { id: 4, image: "/moment.png?height=400&width=400&query=dental gems rainbow" },
+    { id: 5, image: "/moment.png?height=400&width=400&query=dental gems black" },
+    { id: 6, image: "/moment.png?height=400&width=400&query=dental gems gold" },
   ]
 
   // Detect mobile screen size
@@ -68,25 +68,14 @@ export function GallerySection() {
             >
               <div className="aspect-square relative overflow-hidden">
                 <Image
-                  src={`/moment.png?height=400&width=400&query=dental gems ${item.type} crystals on teeth luxury`}
-                  alt={item.title}
+                  src={item.image}
+                  alt="Gallery Image"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                {/* Category Badge */}
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-black/80 text-[#f00020] border border-[#f00020]/30 backdrop-blur-sm">
-                    {item.category}
-                  </Badge>
-                </div>
-
-                {/* Hover Content */}
-                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-white font-bold text-lg mb-1">{item.title}</h3>
-                  <p className="text-[#f00020] font-bold text-xl">{item.price}</p>
-                </div>
+        
               </div>
 
               {/* Glow Effect */}
@@ -111,8 +100,8 @@ export function GallerySection() {
                       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1a1a1a] to-black border-2 border-[#f00020]/30 shadow-2xl shadow-[#f00020]/20">
                         <div className="aspect-[4/5] relative overflow-hidden">
                           <Image
-                            src={`/moment.png?height=500&width=400&query=dental gems ${item.type} crystals on teeth luxury mobile`}
-                            alt={item.title}
+                            src={`${item.image}`}
+                            alt="Gallery Image"
                             fill
                             className="object-cover"
                           />
@@ -120,9 +109,7 @@ export function GallerySection() {
 
                           {/* Floating Elements */}
                           <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
-                            <Badge className="bg-[#f00020]/90 text-white border-0 backdrop-blur-sm font-bold px-3 py-1">
-                              {item.category}
-                            </Badge>
+                    
                             <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                               <Gem className="w-4 h-4 text-white" />
                             </div>
@@ -131,9 +118,9 @@ export function GallerySection() {
                           {/* Content Overlay */}
                           <div className="absolute bottom-0 left-0 right-0 p-6">
                             <div className="space-y-3">
-                              <h3 className="text-white font-black text-2xl tracking-wide">{item.title}</h3>
+                              <h3 className="text-white font-black text-2xl tracking-wide"></h3>
                               <div className="flex items-center justify-between">
-                                <p className="text-[#f00020] font-black text-3xl">{item.price}</p>
+                                <p className="text-[#f00020] font-black text-3xl"></p>
                                 <Button
                                   size="sm"
                                   className="bg-white/20 hover:bg-white/30 text-white border-0 backdrop-blur-sm"

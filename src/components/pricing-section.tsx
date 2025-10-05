@@ -12,43 +12,39 @@ export function PricingSection() {
 
   const plans = [
     {
-      name: "CLASSIC",
-      price: "149€",
+      name: "POSE PAPILLON",
+      price: "50€",	
       icon: Sparkles,
       description: "Parfait pour débuter",
-      features: ["1-3 dents", "Pose sécurisée", "1 retouche gratuite"],
+      features: ["4 strass", "2 dents", "Pose sécurisée"],
       color: "from-white to-[#f00020]",
       popular: false,
       highlight: "Idéal première fois",
     },
     {
-      name: "PREMIUM",
-      price: "299€",
+      name: "POSE ETOILE",
+      price: "65€",
       icon: Gem,
       description: "Le plus populaire",
       features: [
-        "4-8 dents",
-        "Design personnalisé",
-        "3 retouches gratuites",
-        "Nettoyage inclus",
-        "Certificat d'authenticité",
+        "10 strass",
+        "2 dent",
+        "Strass de qualité supérieure",
       ],
       color: "from-[#f00020] to-[#cc0018]",
       popular: true,
       highlight: "Meilleur rapport qualité/prix",
     },
     {
-      name: "LUXURY",
-      price: "799€",
+      name: "SUR DEVIS",
+      price: "DEVIS",
       icon: Crown,
-      description: "L'excellence absolue",
+      description: "Pour les envies les plus folles",
       features: [
-        "Sourire complet",
-        "Design exclusif",
-        "Retouches illimitées",
-        "Maintenance VIP",
-        "Coffret luxe",
-        "Service prioritaire",
+        "Nombre de strass au choix",
+        "Design personnalisé",
+        "Couleurs personnalisées",
+        "Forme de strass au choix",
       ],
       color: "from-[#f00020] to-white",
       popular: false,
@@ -137,10 +133,11 @@ export function PricingSection() {
                   <div className="mt-auto flex">
                     <Button
                       className={`w-full py-4 text-lg font-bold ${
-                        plan.popular
-                          ? "bg-gradient-to-r from-[#f00020] to-[#cc0018] hover:from-[#ff1a3a] hover:to-[#f00020] text-white shadow-lg shadow-[#f00020]/25"
-                          : "bg-[#1a1a1a] hover:bg-[#2a2a2a] text-white border border-gray-700 hover:border-[#f00020]/50"
+                      plan.popular
+                        ? "bg-gradient-to-r from-[#f00020] to-[#cc0018] hover:from-[#ff1a3a] hover:to-[#f00020] text-white shadow-lg shadow-[#f00020]/25"
+                        : "bg-[#1a1a1a] hover:bg-[#2a2a2a] text-white border border-gray-700 hover:border-[#f00020]/50"
                       }`}
+                      onClick={() => window.location.href = "tel:+123456789"}
                     >
                       CHOISIR {plan.name}
                     </Button>

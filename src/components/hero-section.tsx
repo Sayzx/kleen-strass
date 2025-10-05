@@ -32,7 +32,7 @@ export function HeroSection() {
 
               <h1 className="text-6xl lg:text-7xl font-black leading-tight">
                 <span className="bg-gradient-to-r from-[#f00020] via-[#ff1a3a] to-white bg-clip-text text-transparent">
-                  DIAMOND
+                  KLEEN
                 </span>
                 <br />
                 <span className="text-white">SMILE</span>
@@ -60,6 +60,12 @@ export function HeroSection() {
                 size="lg"
                 variant="ghost"
                 className="border-2 border-white text-black bg-white hover:bg-gray-100 px-8 py-4 text-lg font-bold shadow-md"
+                onClick={() => {
+                  document.getElementById('gallery')?.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  })
+                }}
               >
                 VOIR NOS CRÉATIONS
               </Button>

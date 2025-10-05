@@ -57,9 +57,8 @@ export function ContactSection() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white mb-3 tracking-wide">NOTRE ADRESSE</h3>
                       <p className="text-gray-300 leading-relaxed">
-                        <span className="block font-semibold text-[#f00020]">15 Rue du Sourire</span>
-                        <span className="block">75008 Paris, France</span>
-                        <span className="block text-sm text-gray-400 mt-2">Métro: Champs-Élysées</span>
+                        <span className="block font-semibold text-[#f00020]">3 Rue du lion d'or</span>
+                        <span className="block">19100 Brive-la-Gaillarde</span>
                       </p>
                     </div>
                   </div>
@@ -240,7 +239,14 @@ export function ContactSection() {
                       className="relative w-16 h-16 bg-gradient-to-br from-[#f00020] to-[#cc0018] rounded-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer"
                       onClick={() => window.open("https://www.instagram.com/kleen_smile?igsh=MWpncWd2dTQycDB4Nw%3D%3D&utm_source=qr", "_blank")}
                     >
-                      <Instagram className="w-8 h-8 text-white" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                        className="w-8 h-8"
+                      >
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.247 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.247-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.247-2.242-1.31-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.247 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.735 0 8.332.013 7.052.072 5.773.13 4.548.392 3.467 1.473 2.386 2.554 2.124 3.779 2.066 5.058.013 8.332 0 8.735 0 12c0 3.265.013 3.668.072 4.948.058 1.279.33 2.504 1.411 3.585 1.081 1.081 2.306 1.353 3.585 1.411C8.332 23.987 8.735 24 12 24c3.265 0 3.668-.013 4.948-.072 1.279-.058 2.504-.33 3.585-1.411 1.081-1.081 1.353-2.306 1.411-3.585.059-1.28.072-1.683.072-4.948 0-3.265-.013-3.668-.072-4.948-.058-1.279-.33-2.504-1.411-3.585C19.452.392 18.227.13 16.948.072 15.668.013 15.265 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+                      </svg>
                     </div>
                   </div>
   

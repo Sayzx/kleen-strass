@@ -24,16 +24,6 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-bold text-white mb-4">SERVICES</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li className="hover:text-[#f00020] transition-colors cursor-pointer">Strass Classiques</li>
-              <li className="hover:text-[#f00020] transition-colors cursor-pointer">Strass 3D</li>
-              <li className="hover:text-[#f00020] transition-colors cursor-pointer">Diamants VVS</li>
-              <li className="hover:text-[#f00020] transition-colors cursor-pointer">Maintenance Pro</li>
-            </ul>
-          </div>
 
           {/* Contact */}
           <div>
@@ -72,7 +62,7 @@ export function Footer() {
         <div className="border-t border-[#f00020]/20 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
             &copy; 2025-2026 KLEEN SMILE. Tous droits réservés. |
-            <span className="text-[#f00020] ml-1">Créé avec passion à Paris</span>
+            <span className="text-[#f00020] ml-1">Créé avec passion à Brive-la-Gaillarde</span>
           </p>
         </div>
       </div>
