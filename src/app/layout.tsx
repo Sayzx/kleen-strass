@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Strass Dentaire - Diamond Smile",
+  title: "Strass Dentaire - Kleen Smile",
   description: "Sublimez votre sourire avec nos créations uniques de strass dentaires.",
 };
 

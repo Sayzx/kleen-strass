@@ -9,22 +9,8 @@ export function ServicesSection() {
       icon: Gem,
       title: "STRASS CLASSIQUES",
       description: "Pose de strass cristaux sur vos dents pour un sourire éclatant et personnalisé",
-      features: ["Cristaux Swarovski", "Pose sécurisée", "Durée 6-12 mois", "Couleurs variées"],
-      color: "from-[#f00020] to-[#cc0018]",
-    },
-    {
-      icon: Sparkles,
-      title: "STRASS 3D",
-      description: "Créations en relief avec effets 3D pour un sourire unique et spectaculaire",
-      features: ["Effets 3D", "Designs exclusifs", "Cristaux premium", "Pose experte"],
-      color: "from-white to-[#f00020]",
-    },
-    {
-      icon: Crown,
-      title: "DIAMANTS VVS",
-      description: "Incrustation de véritables diamants pour un luxe absolu et une brillance incomparable",
-      features: ["Diamants certifiés", "Qualité VVS", "Sertissage pro", "Garantie luxe"],
-      color: "from-[#f00020] to-white",
+      features: ["Pose sécurisée", "Couleurs variées", "Designs exclusifs", "Cristaux premium"],
+      color: "from-[#f00020] to-[#cc0018]", 
     },
     {
       icon: Shield,
@@ -52,7 +38,7 @@ export function ServicesSection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (

@@ -14,12 +14,12 @@ export function Footer() {
                 <Gem className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">DIAMOND SMILE</h3>
-                <p className="text-xs text-gray-400">STRASS DENTAIRE</p>
+                <h3 className="text-xl font-bold text-white">KLEEN SMILE</h3>
+                <p className="text-xs text-gray-400">KLEEN DENTAIRE</p>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-md">
-              Le spécialiste parisien des strass dentaires. Créations haut de gamme avec cristaux Swarovski, diamants et
+              Le spécialiste des strass dentaires. Créations haut de gamme avec
               designs personnalisés pour sublimer votre sourire.
             </p>
           </div>
@@ -39,10 +39,15 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4">CONTACT</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>15 Rue du Sourire</li>
-              <li>75008 Paris</li>
-              <li className="hover:text-[#f00020] transition-colors cursor-pointer">01 45 67 89 12</li>
-              <li className="hover:text-[#f00020] transition-colors cursor-pointer">contact@diamondsmile.fr</li>
+              <li>3 Rue du lion d'or</li>
+              <li>19100 BRIVE LA GAILLARDE</li>
+              <li className="hover:text-[#f00020] transition-colors cursor-pointer" onClick={() => navigator.clipboard.writeText("+33 6 50 03 09 40")}> +33 6 50 03 09 40</li>
+                <li
+                className="hover:text-[#f00020] transition-colors cursor-pointer"
+                onClick={() => navigator.clipboard.writeText("contact@diamondsmile.fr")}
+                >
+                contact@diamondsmile.fr
+                </li>
             </ul>
 
             <div className="flex space-x-3 mt-4">
@@ -61,7 +66,7 @@ export function Footer() {
 
         <div className="border-t border-[#f00020]/20 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; 2024 DIAMOND SMILE. Tous droits réservés. |
+            &copy; 2025-2026 KLEEN SMILE. Tous droits réservés. |
             <span className="text-[#f00020] ml-1">Créé avec passion à Paris</span>
           </p>
         </div>

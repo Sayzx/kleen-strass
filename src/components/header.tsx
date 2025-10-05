@@ -36,7 +36,7 @@ export function Header() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-[#f00020] to-white bg-clip-text text-transparent">
-                  DIAMOND SMILE
+                  KLEEN SMILE
                 </h1>
                 <p className="text-xs text-gray-400 tracking-wider font-mono">STRASS DENTAIRE</p>
               </div>
@@ -55,12 +55,6 @@ export function Header() {
                 className="text-gray-300 hover:text-[#f00020] transition-colors font-medium tracking-wide"
               >
                 GALERIE
-              </Link>
-              <Link
-                href="#process"
-                className="text-gray-300 hover:text-[#f00020] transition-colors font-medium tracking-wide"
-              >
-                PROCESSUS
               </Link>
               <Link
                 href="#pricing"

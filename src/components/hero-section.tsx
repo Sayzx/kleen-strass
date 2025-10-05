@@ -43,7 +43,7 @@ export function HeroSection() {
               </h1>
 
               <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
-                Sublimez votre sourire avec nos créations uniques de strass dentaires. Cristaux Swarovski, diamants et
+                Sublimez votre sourire avec nos créations uniques de strass dentaires. et
                 designs personnalisés pour un sourire éclatant.
               </p>
             </div>
@@ -68,7 +68,7 @@ export function HeroSection() {
             <div className="flex items-center space-x-8 pt-6">
               <div className="flex items-center space-x-2">
                 <Star className="w-5 h-5 text-[#f00020] fill-current" />
-                <span className="text-white font-medium">4.9/5 (156 avis)</span>
+                <span className="text-white font-medium">5/5 (1 avis)</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Gem className="w-5 h-5 text-[#f00020]" />

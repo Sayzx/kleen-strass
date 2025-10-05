@@ -85,15 +85,15 @@ export function ContactSection() {
                       <div className="space-y-2 text-gray-300">
                         <div className="flex justify-between">
                           <span>Lundi - Vendredi</span>
-                          <span className="text-[#f00020] font-semibold">9h - 19h</span>
+                          <span className="text-[#f00020] font-semibold">10h - 19h</span>
                         </div>
                         <div className="flex justify-between">
                           <span>Samedi</span>
-                          <span className="text-[#f00020] font-semibold">9h - 17h</span>
+                          <span className="text-[#f00020] font-semibold">14h - 19h</span>
                         </div>
                         <div className="flex justify-between">
                           <span>Dimanche</span>
-                          <span className="text-gray-500">Fermé</span>
+                          <span className="text-[#f00020] font-semibold">14h - 18h</span>
                         </div>
                       </div>
                     </div>
@@ -110,7 +110,9 @@ export function ContactSection() {
                     <Phone className="w-6 h-6 text-black" />
                   </div>
                   <h4 className="font-bold text-white text-sm mb-2">TÉLÉPHONE</h4>
-                  <p className="text-xs text-gray-400">01 45 67 89 12</p>
+                    <a href="tel:0650030940" className="text-xs text-gray-400 hover:text-[#f00020] transition-colors">
+                    06 50 03 09 40
+                    </a>
                 </CardContent>
               </Card>
 
@@ -120,7 +122,12 @@ export function ContactSection() {
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-bold text-white text-sm mb-2">EMAIL</h4>
-                  <p className="text-xs text-gray-400">contact@diamondsmile.fr</p>
+                    <p
+                    className="text-xs text-gray-400 cursor-pointer hover:text-[#f00020] transition-colors"
+                    onClick={() => navigator.clipboard.writeText("contact@diamondsmile.fr")}
+                    >
+                    contact@diamondsmile.fr
+                    </p>
                 </CardContent>
               </Card>
             </div>
@@ -134,7 +141,7 @@ export function ContactSection() {
               <div className="relative w-full h-[600px] rounded-3xl overflow-hidden border-2 border-[#f00020]/20 group-hover:border-[#f00020]/60 transition-all duration-500">
                 <Image
                   src="/cab.png?height=600&width=500"
-                  alt="Cabinet Diamond Smile - Intérieur luxueux"
+                  alt="Cabinet Kleen Smile - Intérieur luxueux"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -165,13 +172,13 @@ export function ContactSection() {
                 <div className="absolute bottom-8 left-8 right-8">
                   <h3 className="text-white font-black text-3xl mb-3 tracking-wide">NOTRE CABINET</h3>
                   <p className="text-gray-200 leading-relaxed mb-4">
-                    Un environnement luxueux et sécurisé où chaque détail est pensé pour votre confort et votre
+                    Un environnement propre et sécurisé où chaque détail est pensé pour votre confort et votre
                     sécurité.
                   </p>
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-[#f00020] rounded-full"></div>
-                      <span className="text-sm text-gray-300">Stérilisation UV</span>
+                      <span className="text-sm text-gray-300">Stérilisation</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-white rounded-full"></div>
@@ -210,7 +217,10 @@ export function ContactSection() {
                       <Phone className="w-5 h-5 mr-3 group-hover:animate-bounce" />
                       APPELER MAINTENANT
                     </Button>
-                    <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 text-lg shadow-lg shadow-green-600/30 group">
+                    <Button
+                      className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 text-lg shadow-lg shadow-green-600/30 group"
+                      onClick={() => window.open("https://web.whatsapp.com/send?phone=33650030940", "_blank")}
+                    >
                       <MessageCircle className="w-5 h-5 mr-3 group-hover:animate-bounce" />
                       WHATSAPP
                     </Button>
@@ -230,12 +240,7 @@ export function ContactSection() {
                       <Instagram className="w-8 h-8 text-white" />
                     </div>
                   </div>
-                  <div className="group relative">
-                    <div className="absolute inset-0 bg-white rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-                    <div className="relative w-16 h-16 bg-gradient-to-br from-white to-[#f00020] rounded-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer">
-                      <MessageCircle className="w-8 h-8 text-black" />
-                    </div>
-                  </div>
+  
                 </div>
                 <p className="text-center text-gray-400 text-sm mt-4">
                   Découvrez nos dernières créations et témoignages clients
@@ -252,7 +257,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-bold text-white text-sm">URGENCE 24/7</h4>
-                    <p className="text-[#f00020] font-bold">06 78 90 12 34</p>
+                    <p className="text-[#f00020] font-bold">06 50 03 09 40</p>
                   </div>
                 </div>
               </CardContent>
