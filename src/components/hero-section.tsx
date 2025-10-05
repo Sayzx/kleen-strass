@@ -98,7 +98,7 @@ export function HeroSection() {
               <div className="absolute top-6 right-6 bg-black/80 backdrop-blur-sm rounded-2xl p-4 border border-[#f00020]/30">
                 <div className="flex items-center space-x-2">
                   <Sparkles className="w-5 h-5 text-[#f00020]" />
-                  <span className="text-white font-medium">Cristaux Swarovski</span>
+                  <span className="text-white font-medium">Cristaux Premium</span>
                 </div>
               </div>
 

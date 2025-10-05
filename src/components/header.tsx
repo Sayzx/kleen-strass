@@ -15,7 +15,7 @@ export function Header() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 text-center relative">
           <p className="text-sm font-medium">
-            ✨ <span className="font-bold">NOUVEAU</span> - Strass LOVE disponible |
+            ✨ <span className="font-bold">NOUVEAU</span> - Strass PAPILLON disponible |
             {/* <span className="font-bold ml-2">-15%</span> avec le code{" "} */}
             <span className="bg-white text-[#f00020] px-2 py-0.5 rounded font-mono font-bold ml-1">EN BOUTIQUE</span>
           </p>
